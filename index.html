@@ -1,1 +1,273 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>AJ Enterprise | 90s Retro</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      padding: 25px 16px;
+
+      background:
+        linear-gradient(
+          rgba(0,0,0,0.25),
+          rgba(0,0,0,0.78)
+        ),
+        url("IMG-20260911-WA0003.jpg");
+
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .content {
+      width: 100%;
+      max-width: 650px;
+    }
+
+    .pills {
+      margin-bottom: 25px;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 9px 15px;
+      margin: 4px;
+
+      border-radius: 30px;
+
+      background: rgba(0,0,0,0.55);
+      border: 1px solid rgba(255,255,255,0.45);
+
+      font-size: 13px;
+    }
+
+    .logo {
+      font-size: clamp(52px, 15vw, 100px);
+      font-weight: 900;
+
+      line-height: 0.9;
+      letter-spacing: 3px;
+
+      margin: 20px 0;
+
+      text-shadow:
+        4px 4px 0 #000,
+        0 0 15px rgba(255,255,255,0.2);
+    }
+
+    .tagline {
+      font-size: 18px;
+      line-height: 1.6;
+
+      margin-bottom: 28px;
+
+      text-shadow: 2px 2px 4px black;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      gap: 12px;
+
+      max-width: 450px;
+      margin: auto;
+    }
+
+    .button {
+      display: block;
+
+      padding: 15px 12px;
+
+      border-radius: 15px;
+
+      text-decoration: none;
+      color: white;
+
+      font-weight: bold;
+
+      background: rgba(0,0,0,0.65);
+      border: 1px solid rgba(255,255,255,0.5);
+
+      backdrop-filter: blur(5px);
+
+      transition: 0.2s;
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+      background: rgba(0,0,0,0.85);
+    }
+
+    .card {
+      margin-top: 20px;
+
+      padding: 20px;
+
+      border-radius: 20px;
+
+      background: rgba(0,0,0,0.65);
+      border: 1px solid rgba(255,255,255,0.35);
+
+      backdrop-filter: blur(7px);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      margin: 8px 0;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .footer {
+      margin-top: 15px;
+      font-size: 13px;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 450px) {
+
+      .buttons {
+        grid-template-columns: 1fr;
+      }
+
+      .logo {
+        letter-spacing: 1px;
+      }
+
+      .tagline {
+        font-size: 16px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="hero">
+
+    <div class="content">
+
+      <!-- TOP -->
+      <div class="pills">
+
+        <span class="pill">
+          90s Retro Vibes
+        </span>
+
+        <span class="pill">
+          AJ Enterprise
+        </span>
+
+      </div>
+
+
+      <!-- LOGO -->
+      <div class="logo">
+        AJ<br>
+        ENTERPRISE
+      </div>
+
+
+      <!-- TAGLINE -->
+      <div class="tagline">
+        ⚡ तुमचा ब्रँड • आमची ओळख • 90s ची स्टाईल ⚡
+      </div>
+
+
+      <!-- BUTTONS -->
+      <div class="buttons">
+
+        <a
+          class="button"
+          href="https://wa.me/919172855846"
+          target="_blank">
+          💬 WhatsApp
+        </a>
+
+        <a
+          class="button"
+          href="tel:+919172855846">
+          📞 Call Now
+        </a>
+
+      </div>
+
+
+      <!-- MUSIC -->
+      <div class="card">
+
+        <h2>
+          🎵 Marathi Retro Playlist
+        </h2>
+
+        <p>
+          90s च्या आठवणींसोबत तुमचा अनुभव.
+        </p>
+
+        <audio controls>
+          <source src="" type="audio/mpeg">
+        </audio>
+
+      </div>
+
+
+      <!-- CONTACT -->
+      <div class="card">
+
+        <h2>
+          AJ Enterprise
+        </h2>
+
+        <p>
+          📍 Satara
+        </p>
+
+        <p>
+          📱 9172855846
+        </p>
+
+        <div class="footer">
+          © 2026 AJ Enterprise • 90s Retro Edition
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
